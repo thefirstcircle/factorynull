@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Simple PXE Server with CentOS and PartedMagic"
+author: "Steve O'Neill"
 ---
 
 # PXE
