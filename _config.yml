@@ -28,7 +28,7 @@ twitter_username: steveoneill_jr
 github_username:  thefirstcircle
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 
