@@ -3,15 +3,12 @@ layout: post
 title:  "Cobbler for Bare Metal Provisioning"
 author: "Steve O'Neill"
 ---
+
 ## Before you begin
 
 This should really be behind some kind of router. I am going to use an EdgeRouter X with no ports forwarded. The EdgeRouter will provide DHCP and DNS to its internal network of 10.0.0.0/24.
 
-Basically following this:
-
-[How to Install and Configure Cobbler on CentOS 7.x (linuxtechi.com)](https://www.linuxtechi.com/install-and-configure-cobbler-on-centos-7/)
-
-Create a new CentOS VM. I created mine on a CentOS host using KVM and cockpit-machines for GUI management. Making a snapshot does not appear to be supported at the time of this writing, but it can be done by command line.
+First, create a new CentOS VM. I created mine on a CentOS host using KVM and cockpit-machines for GUI management. Making a snapshot does not appear to be supported at the time of this writing, but it can be done by command line.
 
 It should have bridged networking and be able to access the network. A second physical NIC on the host should be directly attached so the VM can act as a PXE server for its own internal network. 
 
@@ -30,7 +27,7 @@ I didn’t install cobbler-web at first and was confused a little bit because ch
 apachectl restart
 ```
 
-![Untitled](assets/img/cobbler/Untitled.png)
+![Untitled]({{site.url}}assets/img/cobbler/Untitled.png)
 
 Cobbler uses a self-signed SSL certificate. Creds are “cobbler” and “cobbler”.
 
@@ -44,7 +41,7 @@ Interestingly, the guides I followed didn’t make it clear that you must instal
 
 1. Set a static IP for the 2nd [physical] NIC that you associated with the VM. We are going to give it a private IP, 172.168.10.1. Use the nmtui command to do so:
 
-![Untitled](/assets/img/cobbler/Untitled%201.png)
+![Untitled]({{site.url}}/assets/img/cobbler/Untitled%201.png)
 
 1. Install DHCP server: 
 

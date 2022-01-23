@@ -37,7 +37,7 @@ systemctl start libvirtd.service
 
 From this point I can manage the VM from the GUI at [https://hostname:9090/machines](https://hostname:9090/machines) (if you enabled cockpit during installation of the host OS)
 
-![Untitled](assets/img/PXEdc5fea82969448d4b976df305ce8d049/Untitled.png)
+![Untitled]({{site.url}}/assets/img/PXEdc5fea82969448d4b976df305ce8d049/Untitled.png)
 
 ## Enabling networking for the VM
 
@@ -116,11 +116,11 @@ lo      loopback  unmanaged               --
 
 Now we can set up our VM via GUI. Just use the options to download the latest CentOS image and [optionally] run an unattended setup. Note: the password you select will be stored in plaintext on the root directory on the target machine:
 
-![Untitled](assets/img/PXEdc5fea82969448d4b976df305ce8d049/Untitled%201.png)
+![Untitled](/assets/img/PXEdc5fea82969448d4b976df305ce8d049/Untitled%201.png)
 
 Nice, it looks like it got an IP in the expected subnet:
 
-![Untitled](assets/img/PXEdc5fea82969448d4b976df305ce8d049/Untitled%202.png)
+![Untitled]({{site.url}}/assets/img/PXEdc5fea82969448d4b976df305ce8d049/Untitled%202.png)
 
 Now to set up my PXE server on the VM.
 
