@@ -21,7 +21,7 @@
 title: factory null
 email: steve.oneill.jr@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal blog for silly projects and system administration.
+  Silly projects. System Administration.
 baseurl: "factorynull" # the subpath of your site, e.g. /blog
 url: "https://thefirstcircle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: steveoneill_jr
