@@ -30,7 +30,7 @@ twitter_username: steveoneill_jr
 github_username:  thefirstcircle
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
