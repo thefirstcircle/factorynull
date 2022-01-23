@@ -3,7 +3,7 @@ layout: post
 title:  "Cobbler for Bare Metal Provisioning"
 author: "Steve O'Neill"
 ---
-# Before you begin
+## Before you begin
 
 This should really be behind some kind of router. I am going to use an EdgeRouter X with no ports forwarded. The EdgeRouter will provide DHCP and DNS to its internal network of 10.0.0.0/24.
 
