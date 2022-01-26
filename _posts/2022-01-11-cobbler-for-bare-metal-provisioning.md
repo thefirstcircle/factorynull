@@ -2,6 +2,9 @@
 layout: post
 title:  "Cobbler for Bare Metal Provisioning"
 author: "Steve O'Neill"
+pemalink: "cobbler-bare-metal"
+comments: true
+tags: linux
 ---
 
 ## Before you begin
@@ -27,7 +30,7 @@ I didn’t install cobbler-web at first and was confused a little bit because ch
 apachectl restart
 ```
 
-![Untitled]({{site.url}}assets/img/cobbler/Untitled.png)
+![Untitled]({{site.url}}/docs/assets/img/cobbler/Untitled.png)
 
 Cobbler uses a self-signed SSL certificate. Creds are “cobbler” and “cobbler”.
 

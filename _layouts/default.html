@@ -23,6 +23,12 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
+        <h3><a href="{{site.gallery | relative_url}}">gallery</a></h3>
+        <h3><a href="{{site.gallery | relative_url}}">projects</a></h3>
+        <h3><a href="{{site.gallery | relative_url}}">adventures</a></h3>
+        <h3><a href="{{site.gallery | relative_url}}">sysadmin</a></h3>
+        <h3><a href="{{site.gallery | relative_url}}">about</a></h3>
+
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
@@ -42,6 +48,9 @@
       <section>
 
       {{ content }}
+      <br>
+      <br>
+        <h2>Other links:</h2>
 
       {% for post in site.posts %}
       <li><a href="{{ post.url | relative_url }}">{{post.title}}</a></li> <br>
