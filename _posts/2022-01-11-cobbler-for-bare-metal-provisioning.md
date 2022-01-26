@@ -30,7 +30,7 @@ I didn’t install cobbler-web at first and was confused a little bit because ch
 apachectl restart
 ```
 
-![Untitled]({{site.url}}/docs/assets/img/cobbler/Untitled.png)
+![Untitled]({{site.url}}/factorynull/docs/assets/img/cobbler/Untitled.png)
 
 Cobbler uses a self-signed SSL certificate. Creds are “cobbler” and “cobbler”.
 
@@ -44,7 +44,7 @@ Interestingly, the guides I followed didn’t make it clear that you must instal
 
 1. Set a static IP for the 2nd [physical] NIC that you associated with the VM. We are going to give it a private IP, 172.168.10.1. Use the nmtui command to do so:
 
-![Untitled]({{site.url}}/assets/img/cobbler/Untitled%201.png)
+![Untitled]({{site.url}}/factorynull/assets/img/cobbler/Untitled%201.png)
 
 1. Install DHCP server: 
 
