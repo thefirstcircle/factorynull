@@ -5,7 +5,7 @@ title: about
 
 ## about
 
-Hello, I'm Steve O'Neill. This is my personal blog.
+Hello, I'm Steve. This is my personal blog.
 
 ![me](/docs/assets/img/about_me.jpg)
 
@@ -15,6 +15,6 @@ This site is built with [Jekyll](https://jekyllrb.com) and published with Github
 
 {% if site.github.is_project_page %}
 
-You can browse the repository this site is built from [here](https://github.com/thefirstcircle/factorynull)
+You can browse the repository this site is built from [here.](https://github.com/thefirstcircle/factorynull)
 
 {% endif %}
