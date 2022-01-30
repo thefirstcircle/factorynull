@@ -2,9 +2,9 @@
 layout: post
 title:  "Anodizing @ Home (2017 archive)"
 author: "Steve O'Neill"
-pemalink: "home-anodizing"
 comments: true
-tags: project
+categories: projects
+tags: mountain-biking
 ---
 
 ![yHclxok.jpeg]({{site.url}}/factorynull/docs/assets/img/home-anodizing%20ac268122737742dea10ebf08be63d795/yHclxok.jpeg)

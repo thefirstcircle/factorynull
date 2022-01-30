@@ -2,12 +2,12 @@
 layout: post
 title:  "Cobbler for Bare Metal Provisioning"
 author: "Steve O'Neill"
-pemalink: "cobbler-bare-metal"
 comments: true
+categories: sysadmin
 tags: linux
 ---
 
-## Before you begin
+## Before you begin:
 
 This should really be behind some kind of router. I am going to use an EdgeRouter X with no ports forwarded. The EdgeRouter will provide DHCP and DNS to its internal network of 10.0.0.0/24.
 
@@ -67,11 +67,11 @@ Don’t bother editing `/etc/dhcp/dhcpd.conf`. That file is dynamically updated 
 To actually make changes to the DHCP settings, edit /etc/cobbler/dhcp.template:
 
 ```bash
-subnet 172.168.10.0 netmask 255.255.255.0 {
-     option routers             172.168.10.1;
+subnet 172.24.10.0 netmask 255.255.255.0 {
+     option routers             172.24.10.1;
      option domain-name-servers 10.0.0.1;
      option subnet-mask         255.255.255.0;
-     range dynamic-bootp        172.168.10.80 172.168.10.140;
+     range dynamic-bootp        172.24.10.80 172.24.10.140;
      default-lease-time         21600;
      max-lease-time             43200;
      next-server                $next_server;
@@ -79,36 +79,9 @@ subnet 172.168.10.0 netmask 255.255.255.0 {
           match if substring (option vendor-class-identifier, 0, 9) = "PXEClient";
 ```
 
-This file is where I am defining the internal network that our PXE server will provide. It will be 172.168.10.0/24, a subnet I chose at random (make sure you choose a subnet in the RFC1918 private range. I felt foolish after realizing that 172.168.10.1 is actually a valid PUBLIC ip!) ugh
+This file is where I am defining the internal network that our PXE server will provide. It will be 172.24.10.0/24, a subnet I chose at random. Make sure you choose a subnet in the RFC1918 private range.
 
 Notice that we are letting the EdgeRouter, 10.0.0.1, do DNS for now. It’s not necessary to install Bind on the VM or the host. 
-
-Change the configuration file at /etc/cobbler/dnsmasq.template to reflect the DHCP range. Honestly I don’t even think this is used and I might take it out of this guide.
-
-```bash
-# Cobbler generated configuration file for dnsmasq
-# $date 
-#
-
-# resolve.conf .. ?
-#no-poll
-#enable-dbus
-read-ethers
-addn-hosts = /var/lib/cobbler/cobbler_hosts
-
-dhcp-range=172.168.10.80,172.168.10.140
-dhcp-option=66,$next_server
-dhcp-lease-max=1000
-dhcp-authoritative
-dhcp-boot=pxelinux.0
-dhcp-boot=net:normalarch,pxelinux.0
-
-$insert_cobbler_system_definitions
-```
-
-Run a “cobbler sync” to update. 
-
-If you were to plug your laptop into the secondary NIC now, you would get an address in the 172.168.10.80-140 range, as expected. But you would not get internet. By default IP forwarding is disabled in CentOS. 
 
 Restart cobbler (systemctl cobblerd restart) and run cobbler sync again
 
@@ -160,7 +133,7 @@ Template Files                 : {}
 
 Things are going well. However, this comes up during Cobbler Check:
 
-> 2. some network boot-loaders are missing from /var/lib/cobbler/loaders. If you only want to handle x86/x86_64 netbooting, you may ensure that you have installed a *recent* version of the syslinux package installed and can ignore this message entirely. Files in this directory, should you want to support all architectures, should include pxelinux.0, menu.c32, and yaboot.
+>some network boot-loaders are missing from /var/lib/cobbler/loaders. If you only want to handle x86/x86_64 netbooting, you may ensure that you have installed a *recent* version of the syslinux package installed and can ignore this message entirely. Files in this directory, should you want to support all architectures, should include pxelinux.0, menu.c32, and yaboot.
 > 
 
 Solution: 
@@ -172,3 +145,5 @@ yum install -y grub2-efi-x64 shim-x64
 ```
 
 This doesn’t make the error message go away because it doesn’t copy over yaboot to /var/lib/cobbler/loaders. But it does enable EFI booting.
+
+These are the fundamentals of setting up Cobbler in an example context.

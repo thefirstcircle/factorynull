@@ -2,8 +2,8 @@
 layout: post
 title:  "Simple PXE Server with CentOS and PartedMagic"
 author: "Steve O'Neill"
-pemalink: "simple-pxe-centos-partedmagic"
 comments: true
+categories: sysadmin
 tags: linux
 ---
 

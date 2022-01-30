@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title:  "Gallery"
+title:  "gallery"
 pemalink: "gallery"
 ---
 
