@@ -8,11 +8,11 @@ tags: mountain-biking
 ---
 Sam wanted to do a 2-day bikepacking ride.
 
-![Untitled]({{site.url}}/factorynull/docs/assets/img/Berkshire%20Epic%20eb88c180191543aeaaf1eacbb78176bf/Untitled.png)
+![Untitled]({{site.url}}/docs/assets/img/Berkshire%20Epic%20eb88c180191543aeaaf1eacbb78176bf/Untitled.png)
 
 To be candid, I didn’t want to do this. I even felt relieved as I found that my crank was frozen as I pulled out my bike the night before. But as it turns out, Sam actually had a compatible bearing so I couldn’t weasel out. I also installed a new derailleur hanger but was dubious that could fix some prior issues with shifting. Later, it turned out it did. With that, I had run out of excuses.
 
-![Untitled]({{site.url}}/factorynull/docs/assets/img/Berkshire%20Epic%20eb88c180191543aeaaf1eacbb78176bf/Untitled%201.png)
+![Untitled]({{site.url}}/docs/assets/img/Berkshire%20Epic%20eb88c180191543aeaaf1eacbb78176bf/Untitled%201.png)
 
 We left at noon. Sam ripped off his rear derailleur, a brand new Ultegra RX, while shifting into the easiest gear just as we were going into singletrack. He had put the b-screw in all the way but the RD just didn’t have enough capacity for his 42t cassette. He said it worked in the stand which is totally reasonable.
 
@@ -32,7 +32,7 @@ Rode from Huntington up 143 just to get food. Huge hill, and me and Sam kind of 
 
 Rode north just re-routing as necessary. Lots of steep gravel climbs. Tiring. Beautiful sunset.
 
-![Untitled]({{site.url}}/factorynull/docs/assets/img/Berkshire%20Epic%20eb88c180191543aeaaf1eacbb78176bf/Untitled%202.png)
+![Untitled]({{site.url}}/docs/assets/img/Berkshire%20Epic%20eb88c180191543aeaaf1eacbb78176bf/Untitled%202.png)
 
 It got dark as we got onto some dirt doubletrack. Thankfully the terrain was mostly mild. Rode up to Hawley in good spirits. Found a tent camping site just off the road - possibly renegade. Filtered water, and stayed the night. The next day would be even bigger.
 
