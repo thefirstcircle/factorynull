@@ -31,7 +31,7 @@ url: "https://thefirstcircle.github.io" # the base hostname & protocol for your 
 twitter_username: steveoneill_jr
 github_username:  thefirstcircle
 #uncomment for local development:
-logo: "{{site.url}}/factorynull/docs/assets/img/ferns-background.jpg"
+logo: "https://thefirstcircle.github.io/factorynull/docs/assets/img/ferns-background.jpg"
 gallery: "gallery.html"
 about: "about.html"
 projects: "projects.html"
