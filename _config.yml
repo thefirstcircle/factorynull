@@ -37,6 +37,7 @@ about: "about.html"
 projects: "projects.html"
 adventures: "adventures.html"
 sysadmin: "sysadmin.html"
+wordle: "wordle.html"
 
 sass:
     sass_dir: _sass
