@@ -31,7 +31,7 @@ url: "https://factorynull.com" # the base hostname & protocol for your site, e.g
 twitter_username: steveoneill_jr
 github_username:  thefirstcircle
 #uncomment for local development:
-logo: "https://thefirstcircle.github.io/factorynull/docs/assets/img/ferns-background.jpg"
+logo: "https://thefirstcircle.github.io/factorynull/docs/assets/img/ferns-background.png"
 gallery: "gallery.html"
 about: "about.html"
 projects: "projects.html"

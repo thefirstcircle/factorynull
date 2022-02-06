@@ -12,7 +12,7 @@ I had the idea that I could use a [Software Defined Radio dongle](https://www.rt
 !["PE - Ham Radio MTA_1504" by Metro Transportation Library and Archive is licensed under CC BY-NC-SA 2.0"]({{site.url}}/docs/assets/img/3552011876_0fc17ba3c3.jpeg)
 *image source: Metro Transportation Library and Archive - Licensed under CC BY-NC-SA 2.0*
 
-I went with Assembly AI and put $10 in my account, non-refilling. I am inexperienced with using APIs but the AssemblyAI documentation was concise and provided some easy-to-use examples. 
+I went with AssemblyAI and put $10 in my account, non-refilling. I am inexperienced with using APIs but the AssemblyAI documentation was concise and provided some easy-to-use examples. 
 
 I adapted their quickstart guide and made a python script to:
 
