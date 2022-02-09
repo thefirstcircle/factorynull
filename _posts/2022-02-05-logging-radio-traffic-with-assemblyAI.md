@@ -7,7 +7,7 @@ categories: projects
 tags:
 ---
 
-I had the idea that I could use a [Software Defined Radio dongle](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/) to record public voice communications (pollice scanner radio, etc.) and transcribe them to text automatically. It turns out this project was much more practical than I thought - but also more expensive. The API fees are large if you are going with one of the big 3rd-party providers (Google, etc.)
+I had the idea that I could use a [Software Defined Radio dongle](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/) to record public voice communications (police scanner radio, etc.) and transcribe them to text automatically. It turns out this project was much more practical than I thought - but also more expensive. The API fees are large if you are going with one of the big 3rd-party providers (Google, etc.)
 
 !["PE - Ham Radio MTA_1504" by Metro Transportation Library and Archive is licensed under CC BY-NC-SA 2.0"]({{site.url}}/docs/assets/img/3552011876_0fc17ba3c3.jpeg)
 *image source: Metro Transportation Library and Archive - Licensed under CC BY-NC-SA 2.0*

@@ -15,6 +15,6 @@ This site is built with [Jekyll](https://jekyllrb.com) and published with Github
 
 {% if site.github.is_project_page %}
 
-You can browse the repository this site is built from [here.](https://github.com/thefirstcircle/factorynull)
+You can browse the repository this site is built from [here.](https://github.com/thefirstcircle/factorynull). Its layouts are adapted from [this theme](pages-themes.github.io/minimal/) by [orderedlist](https://github.com/orderedlist).
 
 {% endif %}

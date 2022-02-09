@@ -30,14 +30,38 @@ url: "https://factorynull.com" # the base hostname & protocol for your site, e.g
 #url: ""
 twitter_username: steveoneill_jr
 github_username:  thefirstcircle
-#uncomment for local development:
-logo: "https://thefirstcircle.github.io/factorynull/docs/assets/img/ferns-background.png"
+logo: "/docs/assets/img/ferns-background.png"
 gallery: "gallery.html"
 about: "about.html"
 projects: "projects.html"
 adventures: "adventures.html"
 sysadmin: "sysadmin.html"
 wordle: "wordle.html"
+
+social-media:
+  email:
+    id: 'steve.oneill.jr@gmail.com'
+    href: 'mailto:'
+    title: 'Email'
+    fa-icon: 'fa-envelope'
+
+  instagram:
+    id: 'stevenbot'
+    href: 'https://www.instagram.com/'
+    title: 'Instagram'
+    fa-icon: 'fa-instagram'
+
+  twitter:
+    id: 'steveoneill_jr'
+    href: 'https://www.twitter.com/'
+    title: 'Twitter'
+    fa-icon: 'fa-twitter-square'
+
+  github:
+    id: 'thefirstcircle'
+    href: 'https://github.com/'
+    title: 'GitHub'
+    fa-icon: 'fa-github-square'
 
 sass:
     sass_dir: _sass
