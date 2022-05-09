@@ -14,7 +14,7 @@ Either way, you might find it useful to audit the WSD printers in your organizat
 Here are a few lines of Powershell I wrote after not finding anything else online:
 
 ```powershell
-ShellCommandTextReturn(%windir%\Sysnative\WindowsPowerShell\v1.0\powershell -command "Get-ChildItem -Path Registry::\HKLM\SYSTEM\CurrentControlSet\Enum\SWD\DAFWSDProvider -ErrorAction SilentlyContinue | Get-ItemProperty | Select-Object LocationInformation,Mfg,FriendlyName | Sort-Object -Property LocationInformation,Mfg,FriendlyName | Get-Unique -AsString")
+Get-ChildItem -Path Registry::\HKLM\SYSTEM\CurrentControlSet\Enum\SWD\DAFWSDProvider -ErrorAction SilentlyContinue | Get-ItemProperty | Select-Object LocationInformation,Mfg,FriendlyName | Sort-Object -Property LocationInformation,Mfg,FriendlyName | Get-Unique -AsString
 ```
 
 Here is the output:
