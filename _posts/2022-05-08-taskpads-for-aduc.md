@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using RSAT tools with custom taskpads"
+title:  "Using RSAT Tools with Custom Taskpads"
 author: "Steve O'Neill"
 comments: true
 categories: sysadmin
