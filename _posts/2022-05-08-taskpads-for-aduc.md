@@ -16,6 +16,7 @@ The premise is simple. Taskpads added clickable, user defined options to the alr
 Taskpads aren’t specific to the ADUC snap-in, but they can be pointed to batch files - and, yes, Powershell - for any special function you want.
 
 Behold my custom taskpad, circa 2018:
+
 ![Untitled]({{site.url}}/docs/assets/img/taskpad%20f1162ea308774fb3bb74bf699eec8984/Untitled.png)
 
 To create your own taskpad view, open a CMD window, open ```mmc```, and use ```ctl+m``` to open the Add or Remove Snap-ins dialog. Add ‘Active Directory Users and Computers’ to the Console Root. Then find an OU or object in AD, right-click, and select ‘New Taskpad View’. Follow the wizard and use the defaults.
@@ -41,13 +42,13 @@ ping.exe %1 -4 -t
 pause
 ```
 
-So - the title is ‘PING’ with the variable passed in as %1. The color of the box is white, and ping.exe is attempting to reach the computer until it’s cancelled (using IPv4 only). Fairly easier than typing the computer’s name into a command prompt, and just one click to accomplish now:
+So - the title is ‘PING’ with the variable passed in as %1. The color of the box is white, and ping.exe is attempting to reach the computer until it’s cancelled by the user (```-t```) and using IPv4 only (```-4```). Fairly easier than typing the computer’s name into a command prompt, and just one click to accomplish now:
 
 ![Untitled]({{site.url}}/docs/assets/img/taskpad%20f1162ea308774fb3bb74bf699eec8984/Untitled%202.png)
 
 ## URL string insertion
 
-You may use a web service that supports URL-based navigation. For example, here is the “Look up in KACE” task (Lookup_in_KACE.bat):
+You may use a web service - say, for asset management - that supports URL-based navigation. For example, here is the “Look up in KACE” task (Lookup_in_KACE.bat):
 
 ```powershell
 powershell -Command "& {start-process  "msedge.exe" -argumentlist ""https://myKACEinstace.com/adminui/computer_inventory.php?LABEL_ID=&SEARCH_SELECTION="%1"""}"
